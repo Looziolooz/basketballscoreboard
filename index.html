@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basketball Scoreboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="main-title">BASKETBALL SCOREBOARD</h1>
+    
+    <div class="teams-container">
+      <div class="team home-team">
+        <h2 class="team-title">HOME</h2>
+        <div class="score-container">
+          <div class="score-bgd">
+            <span id="count-home" class="score" aria-live="polite">0</span>
+          </div>
+        </div>
+        <div class="points">
+          <button class="btn-plus" data-team="home" data-points="1">+1</button>
+          <button class="btn-plus" data-team="home" data-points="2">+2</button>
+          <button class="btn-plus" data-team="home" data-points="3">+3</button>
+        </div>
+      </div>
+      
+      <div class="separator">
+        <div class="period-container">
+          <h3 class="period-title">PERIOD</h3>
+          <div class="period-bgd">
+            <span id="period-count">1</span>
+          </div>
+          <div class="period-controls">
+            <button id="prev-period" class="btn-period">◀</button>
+            <button id="next-period" class="btn-period">▶</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="team guest-team">
+        <h2 class="team-title">GUEST</h2>
+        <div class="score-container">
+          <div class="score-bgd">
+            <span id="count-guest" class="score" aria-live="polite">0</span>
+          </div>
+        </div>
+        <div class="points">
+          <button class="btn-plus" data-team="guest" data-points="1">+1</button>
+          <button class="btn-plus" data-team="guest" data-points="2">+2</button>
+          <button class="btn-plus" data-team="guest" data-points="3">+3</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="controls">
+      <button id="reset-btn" class="btn-reset">RESET GAME</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
